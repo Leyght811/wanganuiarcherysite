@@ -1,5 +1,5 @@
-function Membership() {
+function MembershipPage() {
   return <h1>Membership Page</h1>;
 }
 
-export default Membership
+export default MembershipPage

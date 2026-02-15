@@ -1,5 +1,5 @@
-function Club() {
+function ClubPage() {
   return <h1>Club Page</h1>;
 }
 
-export default Club
+export default ClubPage
