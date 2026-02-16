@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import ClubPage from './pages/ClubPage';
-import BeginnersPage from './pages/BeginnersPage';
-import MembershipPage from './pages/MembershipPage';
-import GalleryPage from './pages/GalleryPage';
-import ContactPage from './pages/ContactPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './components/pages/HomePage';
+import ClubPage from './components/pages/ClubPage';
+import BeginnersPage from './components/pages/BeginnersPage';
+import MembershipPage from './components/pages/MembershipPage';
+import GalleryPage from './components/pages/GalleryPage';
+import ContactPage from './components/pages/ContactPage';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <BrowserRouter>
       {/* Navigation */}
-      <nav>
-        <Link to="/">Home</Link> |{" "}
-        <Link to="/club">Our Club</Link> |{" "}
-        <Link to="/beginners">Beginners</Link> |{" "}
-        <Link to="/membership">Membership</Link> |{" "}
-        <Link to="/gallery">Gallery</Link> |{" "}
-        <Link to="/contact">Contact Us</Link>
-      </nav>
+      <Navbar />
 
       {/* Routes */}
       <Routes>
