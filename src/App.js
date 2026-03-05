@@ -8,10 +8,23 @@ import MembershipPage from './components/pages/MembershipPage';
 import GalleryPage from './components/pages/GalleryPage';
 import ContactPage from './components/pages/ContactPage';
 import Navbar from './components/Navbar';
+import background from "./images/background3.jpg"
+
+const backgroundStyle = {
+    backgroundImage: `url(${background})`,
+    height: "100vh",
+    width: "100vw",
+    backgroundSize: "cover", // Optional: ensures the image covers the entire element
+    backgroundRepeat: "no-repeat", // Optional: prevents the image from repeating
+    position: "fixed",
+    zIndex: "0",
+    backgroundPosition: "center"
+};
 
 function App() {
   return (
     <BrowserRouter>
+    <div style={backgroundStyle}></div>
       {/* Navigation */}
       <Navbar />
 

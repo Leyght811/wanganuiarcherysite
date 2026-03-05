@@ -1,5 +1,20 @@
+import "./styles.css";
+
+import HomeBanner from "./components/HomeBanner";
+import HomeInfo from "./components/HomeInfo";
+import { HomeRange } from "./components/HomeRange";
+
+
+
 function HomePage() {
-  return <h1>Home Page</h1>;
+    return (
+        <div id="home">
+            
+            <HomeBanner />
+            <HomeInfo />
+            <HomeRange />
+        </div>
+    );
 }
 
-export default HomePage
+export default HomePage;

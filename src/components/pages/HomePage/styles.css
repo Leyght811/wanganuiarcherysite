@@ -1,0 +1,79 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#home-banner {
+    background-color: #0e5ea3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 300px;
+}
+
+#home-info{
+    display: flex;
+    z-index: 2;
+}
+
+#home-info div {
+    padding: 20px;
+    min-height: 543px;
+}
+
+.home-text div {
+    background-color: #3682b4;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+#map-embed{
+    border: 0;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#home-range{
+    display: flex;
+    flex-direction: column;
+}
+
+#home-range-header{
+    z-index: 5;
+    background-color: #0e5ea3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-range-body{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-range-body-section{
+    display: flex;
+    /* align-items: center; */
+    z-index: 5;
+}
+
+.home-range-body-section div{
+    margin: 10px;
+}
+
+.home-range-img div{
+    height: 450px;
+    width: 600px;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.home-range-text{
+    height: 450px;
+}
+
