@@ -74,6 +74,6 @@
 }
 
 .home-range-text{
-    height: 450px;
+    min-height: 430px;
 }
 
