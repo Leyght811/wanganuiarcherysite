@@ -8,7 +8,7 @@ import MembershipPage from './components/pages/MembershipPage';
 import GalleryPage from './components/pages/GalleryPage';
 import ContactPage from './components/pages/ContactPage';
 import Navbar from './components/Navbar';
-import background from "./images/background3.jpg"
+import background from "./images/background2.jpg"
 
 const backgroundStyle = {
     backgroundImage: `url(${background})`,

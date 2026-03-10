@@ -1,0 +1,44 @@
+#club-page-container {
+    width: calc(100vw - 400px);
+    min-height: 100vh;
+    background-color: white;
+    z-index: 5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.club-page-section {
+    border-bottom: 1px solid #0e5ea3;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#club-page-members {
+    display: flex;
+    flex-direction: column;
+}
+
+.club-page-section-head {
+    margin-bottom: 50px;
+    color: #3682b4;
+}
+
+#club-page-members .members-item {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #3682b4;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    color: #fdcf17;
+    cursor: pointer;
+}

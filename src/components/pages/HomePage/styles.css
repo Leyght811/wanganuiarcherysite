@@ -13,7 +13,7 @@
     height: 300px;
 }
 
-#home-info{
+#home-info {
     display: flex;
     z-index: 2;
 }
@@ -29,20 +29,18 @@
     border-radius: 10px;
 }
 
-
-
-#map-embed{
+#map-embed {
     border: 0;
     border-radius: 10px;
     margin-top: 10px;
 }
 
-#home-range{
+#home-range {
     display: flex;
     flex-direction: column;
 }
 
-#home-range-header{
+#home-range-header {
     z-index: 5;
     background-color: #0e5ea3;
     display: flex;
@@ -50,30 +48,28 @@
     align-items: center;
 }
 
-#home-range-body{
+#home-range-body {
     padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.home-range-body-section{
+.home-range-body-section {
     display: flex;
-    /* align-items: center; */
     z-index: 5;
 }
 
-.home-range-body-section div{
+.home-range-body-section div {
     margin: 10px;
 }
 
-.home-range-img div{
+.home-range-img div {
     height: 450px;
     width: 600px;
     background-color: pink;
     border-radius: 10px;
 }
 
-.home-range-text{
+.home-range-text {
     min-height: 430px;
 }
-
