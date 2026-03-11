@@ -5,7 +5,7 @@ import "./styles.css";
 
 export default function ClubPage() {
     return (
-        <div id="club-page-container">
+        <div className="page-container">
             <Members />
             <Conduct />
             <History />

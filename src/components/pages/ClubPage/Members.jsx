@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function Members() {
     return (
-        <div id="club-page-members" className="club-page-section">
-            <div className="club-page-section-head">
+        <div id="club-page-members" className="page-section">
+            <div className="section-head">
                 <h3>Whanganui Archery Club Committee Members</h3>
             </div>
             <div>

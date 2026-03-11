@@ -1,7 +1,7 @@
 export default function Conduct() {
     return (
-        <div id="club-page-conduct" className="club-page-section">
-            <div className="club-page-section-head">
+        <div id="club-page-conduct" className="page-section">
+            <div className="section-head">
                 <h3>Code of Conduct</h3>
             </div>
             <div>
