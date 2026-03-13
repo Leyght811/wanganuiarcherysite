@@ -35,6 +35,14 @@ function MembershipPage() {
                     faucibus orci luctus et ultrices posuere cubilia curae; Nunc
                 </div>
             </div>
+            <div className="page-section">
+                <h3 className="section-head">Contact Us</h3>
+                <div>
+                    <h5>Email:</h5> archerywanganui@gmail.com
+                    <h5>Address:</h5> 7 Lenihan Street, Whanganui East, Whanganui, Manawatu-Whangnaui
+                    <h5>Facebook Group:</h5> <a className="external-link" href="https://www.facebook.com/groups/380386544308091">The Whanganui Archery Club</a>
+                </div>
+            </div>
         </div>
     );
 }

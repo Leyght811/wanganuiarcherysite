@@ -66,10 +66,25 @@
 .home-range-img div {
     height: 450px;
     width: 600px;
-    background-color: pink;
     border-radius: 10px;
 }
 
 .home-range-text {
     min-height: 430px;
+}
+
+@media (max-width: 950px) {
+  #home-info{
+    flex-direction: column;
+  }
+
+  .home-range-body-section{
+    flex-direction: column;
+  }
+  .home-range-img div{
+    width: calc(100% - 20px);
+  }
+  #map-embed{
+    width: 100% !important;
+  }
 }

@@ -1,4 +1,9 @@
-#navbar{
+#nav-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,14 +20,14 @@
     color: #0e5ea3;
 }
 
-#navbar-links a {
+#nav-container a {
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
     color: white;
 }
 
-#navbar-links a:hover{
+#nav-container a:hover{
     color: #fdcf17;
 }
 
@@ -43,4 +48,24 @@
 
 #navbar-button:hover {
     color: #fdcf17;
+}
+
+#nav-burger{
+    display: none;
+    color: white;
+}
+#nav-burger:hover{
+    color: #fdcf17;
+}
+
+@media (max-width: 950px) {
+    #navbar-links{
+        display: none;
+    }
+    #navbar-button{
+        display: none;
+    }
+    #nav-burger{
+        display: inline;
+    }
 }

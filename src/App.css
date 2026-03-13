@@ -59,3 +59,13 @@
     padding-bottom: 50px;
     padding-top: 50px;
 }
+
+.external-link{
+    color: #3682b4;
+    text-decoration: none;
+}
+
+.external-link:hover{
+    color: #fdcf17;
+    cursor: pointer;
+}

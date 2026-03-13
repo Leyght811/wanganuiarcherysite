@@ -3,14 +3,45 @@ import "./styles.css";
 import img from "../../images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 function Navbar() {
+    const [displayOptions, setDisplayOptions] = useState(false);
+    const links = [
+        { title: "Home", link: "/" },
+        { title: "Our Club", link: "/club" },
+        { title: "Beginners", link: "/beginners" },
+        { title: "Membership", link: "/membership" },
+        { title: "Gallery", link: "/gallery" },
+    ];
+
+    return (
+        <div id="nav-container">
+            <DefaultNav
+                displayOptions={displayOptions}
+                setDisplayOptions={setDisplayOptions}
+            />
+            {links.map((link) => {
+                return (
+                    <div
+                        style={{ display: displayOptions ? "inline" : "none" }}
+                        className="navbar"
+                    >
+                        <Link onClick={() => setDisplayOptions(false)} to={link.link}>{link.title}</Link>
+                    </div>
+                );
+            })}
+        </div>
+    );
+}
+
+const DefaultNav = ({ displayOptions, setDisplayOptions }) => {
     const openLink = (link) => {
         window.open(link, "_blank", "noopener,noreferrer");
     };
-
     return (
-        <div id="navbar">
+        <div className="navbar">
             <div id="navbar-logo">
                 <Link to="/">
                     <img className="logo" src={img} />
@@ -18,12 +49,10 @@ function Navbar() {
             </div>
 
             <nav id="navbar-links">
-                <Link to="/">Home</Link> |
-                <Link to="/club">Our Club</Link> |
+                <Link to="/">Home</Link> |<Link to="/club">Our Club</Link> |
                 <Link to="/beginners">Beginners</Link> |
                 <Link to="/membership">Membership</Link> |
-                <Link to="/gallery">Gallery</Link> |
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/gallery">Gallery</Link>
             </nav>
 
             <div
@@ -34,8 +63,14 @@ function Navbar() {
             >
                 <FontAwesomeIcon icon={faFacebook} />
             </div>
+
+            <FontAwesomeIcon
+                onClick={() => setDisplayOptions(!displayOptions)}
+                id="nav-burger"
+                icon={faBars}
+            />
         </div>
     );
-}
+};
 
 export default Navbar;
