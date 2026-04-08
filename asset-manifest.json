@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/wanganuiarcherysite/static/css/main.5554c713.css",
+    "main.js": "/wanganuiarcherysite/static/js/main.9b5be37b.js",
+    "static/js/453.fef40e53.chunk.js": "/wanganuiarcherysite/static/js/453.fef40e53.chunk.js",
+    "static/media/indoor_range.jpg": "/wanganuiarcherysite/static/media/indoor_range.5c6837956dfdb264ec3d.jpg",
+    "static/media/557806649___n.jpg": "/wanganuiarcherysite/static/media/557806649_10161549005456643_8925911722393321994_n.adabea78f2ab9387b350.jpg",
+    "static/media/540755860___n.jpg": "/wanganuiarcherysite/static/media/540755860_10161404166381643_4394366390491835965_n.3aec661253d58a1bd754.jpg",
+    "static/media/556566157___n.jpg": "/wanganuiarcherysite/static/media/556566157_10161529664016643_7449667061284164670_n.29daebbd56dd49ce00de.jpg",
+    "static/media/558896590___n.jpg": "/wanganuiarcherysite/static/media/558896590_10163232665143560_7451918368091733832_n.dd1e82e14d58b22803e2.jpg",
+    "static/media/560047340___n.jpg": "/wanganuiarcherysite/static/media/560047340_10163232664513560_8583273783197500020_n.1377ff329d7c6fdae05c.jpg",
+    "static/media/595142861___n.jpg": "/wanganuiarcherysite/static/media/595142861_10161803201016643_6865834004067353995_n.b78ddd72d695786a9025.jpg",
+    "static/media/560150409___n.jpg": "/wanganuiarcherysite/static/media/560150409_10163232664843560_5636864478467217144_n.1076aa4c570cea9d4e7e.jpg",
+    "static/media/596814538___n.jpg": "/wanganuiarcherysite/static/media/596814538_10161803201321643_5935550274283094996_n.d3f0f48780671ca804aa.jpg",
+    "static/media/background2.jpg": "/wanganuiarcherysite/static/media/background2.d37471774978163c2345.jpg",
+    "static/media/background1.jpg": "/wanganuiarcherysite/static/media/background1.2f94cbe2ab6d325fce6c.jpg",
+    "static/media/559133524___n.jpg": "/wanganuiarcherysite/static/media/559133524_10161549003851643_2865995313382792709_n.ddbb528ac3a01884e82a.jpg",
+    "static/media/595071277___n.jpg": "/wanganuiarcherysite/static/media/595071277_10161803198221643_7152738474022219747_n.aa15df64e317633423b8.jpg",
+    "static/media/595610785___n.jpg": "/wanganuiarcherysite/static/media/595610785_10161803200626643_86175637809021351_n.243ece2968594a376f01.jpg",
+    "static/media/593923774___n.jpg": "/wanganuiarcherysite/static/media/593923774_10161803198026643_5073586517183171480_n.d0847d482e4d32f3627c.jpg",
+    "static/media/593807906___n.jpg": "/wanganuiarcherysite/static/media/593807906_10161803198386643_4557973651627828389_n.91d75885d5a3425a50d8.jpg",
+    "static/media/594640404___n.jpg": "/wanganuiarcherysite/static/media/594640404_10161803199746643_1472117063504250293_n.e295468a628ad71bf771.jpg",
+    "static/media/595067681___n.jpg": "/wanganuiarcherysite/static/media/595067681_10161803200026643_2913624329280145926_n.0a58d21932d8c085c00e.jpg",
+    "static/media/logo.png": "/wanganuiarcherysite/static/media/logo.5373e725035c17863b27.png",
+    "index.html": "/wanganuiarcherysite/index.html",
+    "main.5554c713.css.map": "/wanganuiarcherysite/static/css/main.5554c713.css.map",
+    "main.9b5be37b.js.map": "/wanganuiarcherysite/static/js/main.9b5be37b.js.map",
+    "453.fef40e53.chunk.js.map": "/wanganuiarcherysite/static/js/453.fef40e53.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5554c713.css",
+    "static/js/main.9b5be37b.js"
+  ]
+}
