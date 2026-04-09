@@ -6,19 +6,10 @@ import BeginnersPage from "./components/pages/BeginnersPage";
 import MembershipPage from "./components/pages/MembershipPage";
 import GalleryPage from "./components/pages/GalleryPage";
 import Navbar from "./components/Navbar";
-import background from "./images/background2.jpg";
+
 import { useEffect, useState } from "react";
 
-const backgroundStyle = {
-    backgroundImage: `url(${background})`,
-    height: "100vh",
-    width: "100vw",
-    backgroundSize: "cover", // Optional: ensures the image covers the entire element
-    backgroundRepeat: "no-repeat", // Optional: prevents the image from repeating
-    position: "fixed",
-    zIndex: "0",
-    backgroundPosition: "center",
-};
+
 
 function App() {
     return (
@@ -30,13 +21,14 @@ function App() {
 
 const AppContent = () => {
     const [pageTitle, setPageTitle] = useState("Home");
+    const [pagePath, setPagePath] = useState("/");
 
     const titleMap = [
         { path: "/", title: "Home" },
         { path: "/club", title: "Club" },
         { path: "/beginners", title: "Beginners" },
         { path: "/membership", title: "Membership" },
-        { path: "/gallery", title: "Gallery" }
+        { path: "/gallery", title: "Gallery" },
     ];
 
     let curLoc = useLocation();
@@ -45,15 +37,16 @@ const AppContent = () => {
         const curTitle = titleMap.find((item) => item.path === curLoc.pathname);
         if (curTitle && curTitle.title) {
             setPageTitle(curTitle.title);
+            setPagePath(curTitle.path);
             document.title = curTitle.title;
         }
     }, [curLoc]);
 
     return (
         <div>
-            <div style={backgroundStyle}></div>
+            
             {/* Navigation */}
-            <Navbar />
+            <Navbar currentPage={pagePath} />
 
             {/* Routes */}
             <Routes>

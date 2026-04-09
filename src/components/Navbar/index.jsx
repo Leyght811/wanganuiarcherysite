@@ -6,7 +6,7 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
-function Navbar() {
+function Navbar({ currentPage }) {
     const [displayOptions, setDisplayOptions] = useState(false);
     const links = [
         { title: "Home", link: "/" },
@@ -21,6 +21,8 @@ function Navbar() {
             <DefaultNav
                 displayOptions={displayOptions}
                 setDisplayOptions={setDisplayOptions}
+                currentPage={currentPage}
+                links={links}
             />
             {links.map((link) => {
                 return (
@@ -28,7 +30,15 @@ function Navbar() {
                         style={{ display: displayOptions ? "inline" : "none" }}
                         className="navbar"
                     >
-                        <Link onClick={() => setDisplayOptions(false)} to={link.link}>{link.title}</Link>
+                        <Link
+                            className={
+                                currentPage == link.link && "active-link"
+                            }
+                            onClick={() => setDisplayOptions(false)}
+                            to={link.link}
+                        >
+                            {link.title}
+                        </Link>
                     </div>
                 );
             })}
@@ -36,7 +46,12 @@ function Navbar() {
     );
 }
 
-const DefaultNav = ({ displayOptions, setDisplayOptions }) => {
+const DefaultNav = ({
+    displayOptions,
+    setDisplayOptions,
+    currentPage,
+    links,
+}) => {
     const openLink = (link) => {
         window.open(link, "_blank", "noopener,noreferrer");
     };
@@ -49,10 +64,18 @@ const DefaultNav = ({ displayOptions, setDisplayOptions }) => {
             </div>
 
             <nav id="navbar-links">
-                <Link to="/">Home</Link> |<Link to="/club">Our Club</Link> |
-                <Link to="/beginners">Beginners</Link> |
-                <Link to="/membership">Membership</Link> |
-                <Link to="/gallery">Gallery</Link>
+                {links.map((link) => {
+                    return (
+                        <Link
+                            className={
+                                currentPage == link.link && "active-link"
+                            }
+                            to={link.link}
+                        >
+                            {link.title}
+                        </Link>
+                    );
+                })}
             </nav>
 
             <div
