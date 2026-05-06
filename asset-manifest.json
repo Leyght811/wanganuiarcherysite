@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wanganuiarcherysite/static/css/main.b8cfe667.css",
+    "main.css": "/wanganuiarcherysite/static/css/main.1267284f.css",
     "main.js": "/wanganuiarcherysite/static/js/main.5356c028.js",
     "static/js/453.fef40e53.chunk.js": "/wanganuiarcherysite/static/js/453.fef40e53.chunk.js",
     "static/media/indoor_range.jpg": "/wanganuiarcherysite/static/media/indoor_range.5c6837956dfdb264ec3d.jpg",
@@ -23,12 +23,12 @@
     "static/media/595067681___n.jpg": "/wanganuiarcherysite/static/media/595067681_10161803200026643_2913624329280145926_n.0a58d21932d8c085c00e.jpg",
     "static/media/logo.png": "/wanganuiarcherysite/static/media/logo.5373e725035c17863b27.png",
     "index.html": "/wanganuiarcherysite/index.html",
-    "main.b8cfe667.css.map": "/wanganuiarcherysite/static/css/main.b8cfe667.css.map",
+    "main.1267284f.css.map": "/wanganuiarcherysite/static/css/main.1267284f.css.map",
     "main.5356c028.js.map": "/wanganuiarcherysite/static/js/main.5356c028.js.map",
     "453.fef40e53.chunk.js.map": "/wanganuiarcherysite/static/js/453.fef40e53.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8cfe667.css",
+    "static/css/main.1267284f.css",
     "static/js/main.5356c028.js"
   ]
 }
